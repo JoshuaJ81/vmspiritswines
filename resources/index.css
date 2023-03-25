@@ -45,7 +45,7 @@ p {
       justify-content:space-evenly;
       align-items: center;
       padding: 0.875rem 3%;
-      
+      background-color: #a21919;
       width: 100%;
       height: auto;
       transition: 300ms ease-in-out background-color;
@@ -55,6 +55,7 @@ p {
   
     .logo {
       cursor:pointer;
+      
     }
 
   
@@ -63,7 +64,8 @@ p {
       justify-content: center;
       align-items: center;
       gap: 2rem;
-      margin-right: 8rem;
+      margin-right: 6rem;
+      
     }
 
     .nav-menu ul {
@@ -133,7 +135,7 @@ p {
       text-align: center;
       
       background-blend-mode: color;
-      height: 60rem;
+      height: 40rem;
       
       display: flex;
       flex-direction: column;
@@ -163,7 +165,14 @@ p {
         animation: fadeInAnimation ease 5s;
         animation-iteration-count: 1;
         animation-fill-mode: forwards;
+        
     }
+
+    .unselected {
+      
+      color:rgb(15, 15, 15);
+      
+  }
       
     @keyframes fadeInAnimation {
         0% {
@@ -206,6 +215,61 @@ p {
         
         }
 
+        .wrapper {
+          
+          justify-content: center;
+          align-items: center;
+          
+        }
+
+
+        .sear {
+          height: 2rem;
+          width: 10rem;
+          margin-top: 0.75rem;
+          font-size: 1rem;
+          background-image: url('../images/magnifying\ glass\ icon.png');
+          background-repeat: no-repeat;
+          background-position: right center;
+          outline: 0;
+          
+
+        }
+
+        .results {
+          padding: 0px;
+          position: fixed;
+        }
+        
+        .results ul {
+          margin: 0; 
+          padding: 0; 
+          
+        }
+        
+
+       
+
+        .results ul li {
+          list-style: none;
+          border-radius: 3px;
+          opacity: 0;
+          display: none;
+          padding: 8px 42px;
+        
+          transition: all .5s linear;
+          
+        }
+
+        .show .results ul li {
+          opacity: 1;
+          display: block;
+          background-color: #a21919;
+          
+        }
+
+      
+
 
       .btn {
         
@@ -241,7 +305,7 @@ p {
 
 
       .beverage {
-        box-shadow: 0 1px 1px 0 rgba(0, 0, 0, 0.5);
+        box-shadow: 0 1px 1px 0 rgba(0, 1.5, 1.5, 2);
       }
 
       .pagination {
@@ -327,11 +391,11 @@ p {
   padding-bottom: 1rem;
   padding-top: 1rem;
   color: #fff;
-  border-bottom: 2.5px solid #a21919;
-  border-top: 2.5px solid #a21919;
-  border-right: 2.5px solid #a21919;
-  border-left: 2.5px solid #a21919;
-  background-color: #d4af37;
+  border-bottom: 2.5px solid #d76209;
+  border-top: 2.5px solid #d76209;
+  border-right: 2.5px solid #d76209;
+  border-left: 2.5px solid #d76209;
+  background-color: rgb(230, 156, 18);
 }
 
 
@@ -433,14 +497,14 @@ p {
   /*============================================================ ABOUT PAGE ===========================================================*/
 
   #page-hero {
-    background-image: url('../images/otherhero.jpg');
+    background-image: url('../images/kashish-grover-NsGRaPiosus-unsplash.jpg');
     background-repeat: no-repeat;
     background-size: cover;
     background-position:top;
     text-align: center;
     
     background-blend-mode: color;
-    height: 60rem;
+    height: 30rem;
     
     display: flex;
     flex-direction: column;
@@ -684,6 +748,7 @@ input {
 
 .products-preview .container {
   text-align: center;
+  
 }
 
 .products-preview h2 {
@@ -718,7 +783,7 @@ input {
 
 .social-media-div {
 
-  background-color: #d4af37;
+  background-color: rgb(230, 156, 18);
 
 
 }
@@ -1143,6 +1208,10 @@ input {
   
 }
 
+
+
+
+
 .products-preview h2 {
   font-size: 1.2rem;
   margin-left: 0.75rem;
@@ -1273,7 +1342,7 @@ width: 219px;
 
 #hero, #page-hero {
 
-  height: 45rem;
+  height: 28rem;
 
 }
 
@@ -1283,7 +1352,7 @@ width: 219px;
 
   #hero, #page-hero {
 
-    height: 40rem;
+    height: 32rem;
    
     
     }

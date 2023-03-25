@@ -1,6 +1,6 @@
 //JS for changing nav header color on scroll
 
-const nav = document.querySelector('.navbar');
+//const nav = document.querySelector('.navbar');
 
 window.addEventListener('scroll', ()=> {
 
@@ -8,6 +8,18 @@ window.addEventListener('scroll', ()=> {
         nav.classList.add('active-nav');
     } else {
         nav.classList.remove('active-nav');
+    }
+
+})
+
+const headerTag = document.querySelector('selected');
+
+window.addEventListener('scroll', ()=> {
+
+    if (window.scrollY >= 50) {
+        headerTag.classList.add('unselected');
+    } else {
+        headerTag.classList.remove('unselected');
     }
 
 })
@@ -31,5 +43,46 @@ document.querySelectorAll('.nav-link').forEach(n => n.addEventListener('click', 
     navMenu.classList.remove('active');
 }))
 
+
+//Search Engine
+
+let searchable = [
+
+'<a href="budweiser.html">budweiser</a>',
+'<a href="hennessey.html">hennessey</a>',
+
+
+];
+
+const searchInput = document.getElementById('search');
+const searchWrapper = document.querySelector('.wrapper');
+const resultsWrapper = document.querySelector('.results');
+
+searchInput.addEventListener('keyup', () => {
+let results = [];
+let input = searchInput.value;
+if (input.length) {
+    results = searchable.filter((item) => {
+        return item.toLowerCase().includes(input.toLowerCase());
+    });
+}
+
+renderResults(results);
+
+});
+
+function renderResults(results) {
+    if (!results.length) {
+        return searchWrapper.classList.remove('show');
+    }
+
+    const content = results.map((item) => {
+        return `<li><a href='#'>${item}</a></li>`;
+    })
+    .join('');
+
+    searchWrapper.classList.add('show');
+    resultsWrapper.innerHTML = `<ul>${content}</ul>`;
+}
 
 
