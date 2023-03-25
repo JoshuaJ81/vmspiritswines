@@ -50,7 +50,22 @@ let searchable = [
 
 '<a href="budweiser.html">budweiser</a>',
 '<a href="hennessey.html">hennessey</a>',
-
+'<a href="1800s.html">1800</a>',
+'<a href="1800s.html">1800 anejo 750 ml</a>',
+'<a href="1800s.html">1800 coconut 750 ml</a>',
+'<a href="1800s.html">1800 reposado 200 ml</a>',
+'<a href="1800s.html">1800 reposado 375 ml</a>',
+'<a href="1800s.html">1800 reposado 750 ml</a>',
+'<a href="1800s.html">1800 rtd 1.75 ml black cherry</a>',
+'<a href="1800s.html">1800 rtd 1.75 ml mango</a>',
+'<a href="1800s.html">1800 rtd 1.75 ml peach</a>',
+'<a href="1800s.html">1800 rtd 1.75 ml pineapple</a>',
+'<a href="1800s.html">1800 rtd 1.75 ml raspberry</a>',
+'<a href="1800s.html">1800 rtd 1.75 ml strawberry</a>',
+'<a href="1800s.html">1800 rtd 1.75 ml watermelon</a>',
+'<a href="1800s.html">1800 silver 200 ml</a>',
+'<a href="1800s.html">1800 silver 375 ml</a>',
+'<a href="1800s.html">1800 silver 750 ml</a>',
 
 ];
 
